@@ -10,7 +10,7 @@ namespace UsedCars.Infrastructure.Persistence
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
            optionsBuilder.UseNpgsql(
-    "Host=localhost;Port=5432;Database=UsedCarsDb;Username=postgres;Password=1234");
+    "Host=localhost;Port=port;Database=UsedCarsDb;Username=user;Password=pass");
             return new AppDbContext(optionsBuilder.Options);
         }
     }
